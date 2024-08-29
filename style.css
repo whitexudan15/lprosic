@@ -311,7 +311,7 @@ h1.ml8 {
   color: var(--bluesky);
 }
 .ml11 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5em;
 }
 
@@ -1483,7 +1483,7 @@ footer {
   }
   .text-caption p {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     opacity: 0;
     margin-bottom: 20px;
     text-align: center;
