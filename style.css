@@ -155,22 +155,23 @@
 
 .lux-navbar .nav-link {
   border-bottom: 3px solid transparent;
-  transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
-  -webkit-transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
-  -moz-transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
-  -ms-transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
-  -o-transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+  padding-bottom: 4px;
+  transition: all 0.3s ease-in-out, border-color 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out, border-color 0.3s ease;
+  -moz-transition: all 0.3s ease-in-out, border-color 0.3s ease;
+  -ms-transition: all 0.3s ease-in-out, border-color 0.3s ease;
+  -o-transition: all 0.3s ease-in-out, border-color 0.3s ease;
 }
 
 .lux-navbar .nav-link:hover {
-  padding-bottom: 15px;
-  border-bottom-color: var(--bluesky);
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--bluesky);
 }
 
 .nav-item .actives {
   color: var(--bluesky) !important;
-  padding-bottom: 5px;
-  border-bottom-color: var(--bluesky);
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--bluesky);
 }
 
 .navbar-toggler {
