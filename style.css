@@ -275,7 +275,7 @@ h1.ml8 {
 
 .text-caption p {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
   opacity: 0;
   margin-bottom: 20px;
   text-align: left;
@@ -681,7 +681,11 @@ h1.ml8 {
   border-radius: 50%;
 }
 
-.atout-title{
+.atout-title h4{
+  font-weight: 700;
+}
+
+.atout-title p{
   font-weight: 600;
 }
 
@@ -1497,7 +1501,7 @@ footer {
 
   .carousel-caption-3 {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -80%);
     color: var(--white);
@@ -1529,13 +1533,19 @@ footer {
     height: 80%;
   }
 
-  .numero {
-    width: 150px;
-    height: 45px;
-  }
-
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .numero{
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .numero{
+    height: 40px;
+  }
+}
 /*===============================Apropos CSS=============================*/
 
 /*############## Presentation ###############*/
