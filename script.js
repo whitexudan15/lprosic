@@ -357,7 +357,6 @@ document.addEventListener("DOMContentLoaded", function () {
         counter.innerText = count;
         counter.dataset.reset = "false";
       }
-
       updateCounter();
     });
   }
