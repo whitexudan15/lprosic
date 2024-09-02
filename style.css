@@ -1,5 +1,5 @@
 /*==============================Principal CSS==========================*/
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Grey+Qo&family=Lobster&family=Monsieur+La+Doulaise&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Grey+Qo&family=Lobster&family=Monsieur+La+Doulaise&display=swap");
 :root {
   --white: #fdfdfd;
   --bluesky: #00d0ff;
@@ -25,11 +25,10 @@
   font-size: 100px;
 }
 
-
 @media screen and (max-width: 992px) {
   .grey-qo-regular,
   .monsieur-la-doulaise-regular,
-  .lobster-regular{
+  .lobster-regular {
     font-size: 50px;
   }
 }
@@ -180,10 +179,9 @@
 }
 
 /* Assurez-vous que la navbar se déploie sur toute la largeur de l'écran en mode mobile */
-@media (max-width: 992px) { /* Couvre jusqu'à la taille 'lg' de Bootstrap */
-
+@media (max-width: 992px) {
+  /* Couvre jusqu'à la taille 'lg' de Bootstrap */
 }
-
 
 /*########## Carousel ##########*/
 .myCarousel {
@@ -561,7 +559,7 @@ h1.ml8 {
 
 .concours li a:hover,
 .resultat a:hover,
-.article a:hover{
+.article a:hover {
   color: red;
 }
 
@@ -682,11 +680,11 @@ h1.ml8 {
   border-radius: 50%;
 }
 
-.atout-title h4{
+.atout-title h4 {
   font-weight: 700;
 }
 
-.atout-title p{
+.atout-title p {
   font-weight: 600;
 }
 
@@ -815,8 +813,6 @@ h1.ml8 {
   height: 80%;
 }
 
-
-
 .card-container span:nth-child(1) {
   letter-spacing: 1px;
   font-size: 25px;
@@ -924,7 +920,6 @@ h1.ml8 {
 }
 .mission-section ul li {
   list-style-type: none;
-
 }
 .mission-section ul li::before {
   content: "\2193";
@@ -1358,7 +1353,7 @@ footer {
   .text-center-md {
     text-align: center;
   }
-  .text-center-md i{
+  .text-center-md i {
     display: none;
   }
   .range h5::after {
@@ -1537,17 +1532,16 @@ footer {
   .nos-activite {
     height: 80%;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .numero{
+  .numero {
     width: 150px;
   }
 }
 
-@media screen and (max-width: 768px){
-  .numero{
+@media screen and (max-width: 768px) {
+  .numero {
     height: 40px;
   }
 }
@@ -1594,7 +1588,7 @@ footer {
   padding-bottom: 20px;
 }
 .presentation h1::after,
-.presentation-contact h1::after  {
+.presentation-contact h1::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1631,11 +1625,10 @@ footer {
 
 @media screen and (max-width: 992px) {
   .presentation,
-  .presentation-contact{
+  .presentation-contact {
     height: 40vh;
   }
 }
-
 
 /*########### Historique #############*/
 .his {
@@ -1870,67 +1863,63 @@ footer {
 
 /*===========================Evenement CSS==================================*/
 
-
-.actu{
+.actu {
   position: relative;
 }
 
-.actu::after{
+.actu::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   background: var(--bluedark);
 }
-.legende-actualites h2{
+.legende-actualites h2 {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-.legende-actualites h2:hover{
+.legende-actualites h2:hover {
   color: var(--bluesky);
 }
 
-.etiquettes{
+.etiquettes {
   display: flex;
   justify-content: space-between;
 }
 
-.etiquettes p{
+.etiquettes p {
   color: red;
   font-weight: 700;
 }
 
-
-
-.portion{
+.portion {
   position: relative;
   height: 1000px;
   background: rgb(222, 222, 222, 0.7);
-  border-radius: 5px ;
-  -webkit-border-radius: 5px ;
-  -moz-border-radius: 5px ;
-  -ms-border-radius: 5px ;
-  -o-border-radius: 5px ;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   padding: 20px;
 }
-.portion ul{
+.portion ul {
   padding: 0 !important;
 }
 
-.portion h3{
+.portion h3 {
   color: var(--bluedark);
   font-weight: 700;
 }
-.ac-push-last-news__article{
+.ac-push-last-news__article {
   position: relative;
   list-style: none;
 }
 
-
-.ac-push-last-news__article::after{
+.ac-push-last-news__article::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1939,7 +1928,7 @@ footer {
   height: 1px;
   background: var(--bluedark);
 }
-.ac-push-last-news__article a{
+.ac-push-last-news__article a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1947,19 +1936,18 @@ footer {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-.ac-push-last-news__article a:hover{
+.ac-push-last-news__article a:hover {
   color: var(--bluedark);
 }
 
-.ac-push-last-news__article a span{
+.ac-push-last-news__article a span {
   color: red;
 }
 
 /*================================Formation CSS============================*/
-.formation span{
+.formation span {
   color: red;
 }
-
 
 .process-wrapper h1 {
   color: #333;
@@ -2014,10 +2002,8 @@ footer {
   padding: 10px;
 }
 
-
-
 #progress-bar-container li .step-inner.bg {
-    background: var(--bluedark);
+  background: var(--bluedark);
   color: var(--bluesky);
 }
 
@@ -2068,9 +2054,133 @@ footer {
   }
 }
 
-
 /*=================================Admission CSS=================================*/
+.roadmap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.roadmap h4 span {
+  color: red;
+}
+.timeline {
+  position: relative;
+  display: flex;
+  padding-left: 0;
+}
+.timeline li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.timeline li .icon {
+  font-size: 35px;
+  color: red;
+  margin: 0 97px;
+}
+.timeline li .text {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000050;
+  text-align: center;
+}
+.timeline li .text:hover {
+  color: red;
+}
+.timeline li .prog {
+  width: 30px;
+  height: 30px;
+  margin: 12px 0;
+  border-radius: 50%;
+  background-color: red;
+  display: grid;
+  place-items: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 10; /* Utilisez une valeur plus raisonnable */
+}
 
+.prog::after {
+  content: " ";
+  width: 200px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  right: 30px;
+  z-index: -1;
+}
+
+.on::after {
+  width: 0;
+  height: 0;
+}
+.timeline li .prog .uil {
+  display: none;
+}
+.timeline li .prog p {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.timeline li .active {
+  background-color: #000050;
+}
+.timeline li .active p {
+  display: none;
+}
+.timeline li .active .uil {
+  font-size: 20px;
+  display: flex;
+}
+
+@media screen and (max-width: 1090px) {
+  .timeline li .icon {
+    margin: 0 50px;
+  }
+  .prog::after {
+    width: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 0;
+  }
+  .timeline li {
+    flex-direction: row;
+  }
+  .timeline li .prog {
+    margin: 0 30px;
+  }
+  .timeline li .text {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .prog::after {
+    width: 5px;
+    height: 53px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .on::after {
+    height: 0;
+  }
+  .timeline li .icon {
+    margin: 15px 0;
+  }
+}
 
 /*===========================Contact CSS===================================*/
 
@@ -2143,7 +2253,6 @@ footer {
   position: relative;
   height: 100%;
   width: 100%;
-  
 }
 .map iframe {
   width: 100%;
@@ -2169,7 +2278,6 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-
   .map {
     top: 30px;
     right: 0;
@@ -2182,7 +2290,7 @@ footer {
     padding-right: 0 !important;
     width: 100%;
   }
-  .contact-form{
+  .contact-form {
     box-shadow: none;
     margin: 10px;
   }
@@ -2196,15 +2304,14 @@ footer {
   }
 }
 
-
-@media screen and (min-width: 992px){
-  .lux-navbar{
+@media screen and (min-width: 992px) {
+  .lux-navbar {
     padding: 25px 0;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .contact-height{
+  .contact-height {
     padding-bottom: 30px !important;
   }
 }
