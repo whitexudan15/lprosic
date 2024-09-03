@@ -122,6 +122,17 @@
   }
 }
 
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /*==========================Index CSS===============================*/
 
 /*######### Menu/Navbar ##########*/
@@ -2062,6 +2073,8 @@ footer {
   display: block;
 }
 
+/*============ DEBOUCHES ===========*/
+
 .debouche h1 {
   color: #000050;
   font-weight: 700;
@@ -2101,7 +2114,7 @@ th {
   border: 1px solid #000;
   padding: 10px;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: rgb(222, 222, 222, 0.7);
   font-weight: bold;
 }
 
@@ -2112,6 +2125,65 @@ td {
 
 td ul li {
   list-style: square;
+}
+
+/*=========== CERTIFICATIONS ===========*/
+.certification h1 {
+  color: #000050;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.certification h1::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background: red;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -90%);
+  -moz-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  -o-transform: translate(-50%, -90%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.certification:hover h1::after {
+  width: 100px;
+}
+
+.certification h5 {
+  color: var(--bluedark);
+}
+
+.certification-body {
+  border: 5px red solid;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+}
+
+.certification-body p {
+  text-align: justifiy;
+  font-weight: 600;
+}
+.certification p span {
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+.certification p small {
+  color: var(--bluedark);
+  font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -2145,18 +2217,6 @@ td ul li {
   td ul li {
     list-style: none;
     text-align: center;
-  }
-}
-
-@keyframes FadeInUp {
-  0% {
-    transform: translateY(150px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
   }
 }
 
