@@ -2111,7 +2111,7 @@ table {
 }
 
 th {
-  border: 1px solid #000;
+  border: 1px solid var(--bluedark);
   padding: 10px;
   text-align: center;
   background-color: rgb(222, 222, 222, 0.7);
@@ -2119,17 +2119,18 @@ th {
 }
 
 td {
-  border: 1px solid #000;
+  border: 1px solid var(--bluedark);
   padding: 10px;
 }
 
 td ul li {
   list-style: square;
+  color: var(--bluedark);
 }
 
 /*=========== CERTIFICATIONS ===========*/
 .certification h1 {
-  color: #000050;
+  color: var(--bluedark);
   font-weight: 700;
   position: relative;
   padding-bottom: 25px;
@@ -2160,6 +2161,11 @@ td ul li {
 
 .certification h5 {
   color: var(--bluedark);
+}
+
+.certi {
+  display: flex;
+  justify-content: space-around;
 }
 
 .certification-body {
@@ -2333,6 +2339,31 @@ td ul li {
 
 .communique-express:hover h1::after {
   width: 100px;
+}
+
+.communique-body {
+  border: 5px red solid;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+}
+
+.communique-body p {
+  text-align: justifiy;
+  font-weight: 600;
+}
+.communique-body p span {
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.certification p small {
+  color: var(--bluedark);
+  font-style: italic;
 }
 
 @media screen and (max-width: 1090px) {
