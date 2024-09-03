@@ -1649,7 +1649,7 @@ footer {
 /*########### Historique #############*/
 .his {
   position: relative;
-  background: rgb(222, 222, 222, 0.4);
+  background: rgb(222, 222, 222, 0.5);
 }
 .historique {
   position: relative;
@@ -1691,7 +1691,7 @@ footer {
   position: relative;
   text-align: justify;
   padding: 25px;
-  background: rgb(222, 222, 222, 0.8);
+  background: rgb(222, 222, 222);
   line-height: 1.5rem;
 }
 .historique-body::before {
@@ -1961,6 +1961,10 @@ footer {
 }
 
 /*================================Formation CSS============================*/
+.formation {
+  background: rgb(222, 222, 222, 0.9);
+}
+
 .formation span {
   color: red;
 }
@@ -2056,6 +2060,93 @@ footer {
 
 #progress-content-section .section-content.active {
   display: block;
+}
+
+.debouche h1 {
+  color: #000050;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.debouche h1::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background: red;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -90%);
+  -moz-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  -o-transform: translate(-50%, -90%);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.debouche:hover h1::after {
+  width: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+td ul li {
+  list-style: square;
+}
+
+@media (max-width: 768px) {
+  tbody tr,
+  tbody td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    position: relative;
+    text-align: left;
+    border: 1px solid #000; /* Assure que les bordures gauche et droite sont visibles */
+    border-bottom: 1px solid #000;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #f0f0f0;
+  }
+
+  td ul {
+    padding-left: 0 !important;
+  }
+
+  td ul li {
+    list-style: none;
+    text-align: center;
+  }
 }
 
 @keyframes FadeInUp {
@@ -2158,14 +2249,14 @@ footer {
   display: flex;
 }
 
-.guide-express h1 {
+.communique-express h1 {
   color: #000050;
   font-weight: 700;
   position: relative;
   padding-bottom: 25px;
   text-transform: uppercase;
 }
-.guide-express h1::after {
+.communique-express h1::after {
   position: absolute;
   content: "";
   width: 50px;
@@ -2181,7 +2272,7 @@ footer {
   -o-transform: translate(-50%, -90%);
 }
 
-.guide-express:hover h1::after {
+.communique-express:hover h1::after {
   width: 100px;
 }
 
