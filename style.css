@@ -154,7 +154,7 @@
 
 .lux-navbar .nav-link {
   border-bottom: 3px solid transparent;
-  padding-bottom: 4px;
+  padding-bottom: 15px;
   transition: all 0.3s ease-in-out, border-color 0.3s ease;
   -webkit-transition: all 0.3s ease-in-out, border-color 0.3s ease;
   -moz-transition: all 0.3s ease-in-out, border-color 0.3s ease;
@@ -163,13 +163,13 @@
 }
 
 .lux-navbar .nav-link:hover {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 3px solid var(--bluesky);
 }
 
 .nav-item .actives {
   color: var(--bluesky) !important;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   border-bottom: 3px solid var(--bluesky);
 }
 
@@ -1407,23 +1407,26 @@ footer {
   color: var(--bluesky);
   margin-top: 25px;
 }
-
 .home-button {
   position: relative;
 }
 .back-button {
   position: absolute;
-  bottom: 120px;
-  right: 30px;
+  bottom: 125px;
+  right: 5px;
   width: 40px;
   height: 40px;
   padding-top: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   background-color: red;
   z-index: 999;
-  border-radius: 50%;
+  border-radius: 50% 0 0 50%;
+  -webkit-border-radius: 50% 0 0 50%;
+  -moz-border-radius: 50% 0 0 50%;
+  -ms-border-radius: 50% 0 0 50%;
+  -o-border-radius: 50% 0 0 50%;
 }
 
 @media screen and (max-width: 992px) {
@@ -2062,6 +2065,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(222, 222, 222, 0.9);
 }
 .roadmap h4 span {
   color: red;
@@ -2139,6 +2143,33 @@ footer {
 .timeline li .active .uil {
   font-size: 20px;
   display: flex;
+}
+
+.guide-express h1 {
+  color: #000050;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.guide-express h1::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background: red;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -90%);
+  -moz-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  -o-transform: translate(-50%, -90%);
+}
+
+.guide-express:hover h1::after {
+  width: 100px;
 }
 
 @media screen and (max-width: 1090px) {
