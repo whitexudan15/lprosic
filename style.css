@@ -33,6 +33,19 @@
   }
 }
 
+/* Centrer le loader sur la page */
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  z-index: 99999;
+}
+
 /*Keyframe CSS*/
 @keyframes TopSlide {
   0% {
