@@ -1437,7 +1437,7 @@ footer {
 .back-button {
   position: absolute;
   bottom: 125px;
-  right: 5px;
+  right: 0;
   width: 40px;
   height: 40px;
   padding-top: 5px;
