@@ -1373,6 +1373,7 @@ footer {
   color: var(--bluesky);
   display: flex;
 }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .text-center-md {
     text-align: center;
