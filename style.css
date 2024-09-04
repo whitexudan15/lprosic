@@ -870,9 +870,9 @@ h1.ml8 {
 }
 
 .social-media i:hover {
-  background: #0cf;
-  box-shadow: 0 0 20px #0cf;
-  color: #000050;
+  background: var(--bluesky);
+  box-shadow: 0 0 10px var(--bluesky);
+  color: var(--bluedark);
 }
 
 .text-content,
@@ -2116,7 +2116,8 @@ th {
   padding: 10px;
   text-align: center;
   background-color: rgb(222, 222, 222, 0.7);
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 td {
@@ -2127,6 +2128,7 @@ td {
 td ul li {
   list-style: square;
   color: var(--bluedark);
+  font-weight: bold;
 }
 
 /*=========== CERTIFICATIONS ===========*/
@@ -2176,11 +2178,10 @@ td ul li {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .certification-body p {
-  text-align: justifiy;
   font-weight: 600;
 }
 .certification p span {
@@ -2239,9 +2240,6 @@ td ul li {
   align-items: center;
   flex-direction: column;
   background-color: rgb(222, 222, 222, 0.9);
-}
-.roadmap h4 span {
-  color: red;
 }
 .timeline {
   position: relative;
@@ -2352,11 +2350,14 @@ td ul li {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .communique-body p {
-  text-align: justifiy;
   font-weight: 600;
 }
 .communique-body p span {
@@ -2365,9 +2366,76 @@ td ul li {
   font-style: italic;
 }
 
-.certification p small {
+/*======== CONDITION D'ADMISSION =========*/
+.condition-admission h1 {
+  color: #000050;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.condition-admission h1::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 8px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background: red;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translate(-50%, -90%);
+  -moz-transform: translate(-50%, -90%);
+  -ms-transform: translate(-50%, -90%);
+  -o-transform: translate(-50%, -90%);
+}
+
+.condition-admission:hover h1::after {
+  width: 100px;
+}
+
+.condition-admission table tr td {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
   color: var(--bluedark);
-  font-style: italic;
+}
+
+/*=========== DEADLINE ==========*/
+.deadline {
+  position: fixed;
+  top: 300px;
+  right: -100%;
+  width: 300px;
+  background-color: #ffff;
+  color: var(--bluedark);
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: right 1s ease-in-out;
+  -webkit-transition: right 1s ease-in-out;
+  -moz-transition: right 1s ease-in-out;
+  -ms-transition: right 1s ease-in-out;
+  -o-transition: right 1s ease-in-out;
+}
+.deadline p {
+  margin: 0;
+  padding: 15px 15px 15px 0 !important;
+}
+
+.deadline.show {
+  right: 0;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1090px) {

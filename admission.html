@@ -25,7 +25,7 @@
         <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/dotSpinner.js"></script>
         <l-dot-spinner size="80" speed="1" color="#000050" style="padding-bottom: 50px;"></l-dot-spinner>
     </div>
-    <!--Menu/Navbar-->
+    <!-- MENU/NAVBAR-->
     <div id="home"></div>
     <nav class="lux-navbar container-fluid navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="container">
@@ -61,8 +61,14 @@
             </div>
         </div>
     </nav>
-    <!--Presentation-->
+    <!--PRESENTATION-->
     <section class="presentation">
+        <div class="deadline" id="deadline">
+            <p><span style="color: red;">Date limite</span> : 09 Septembre 2024<span class="close" id="close"
+                    style="font-weight: 800; font-size: 26px; color: red;">&times;</span>
+            </p>
+
+        </div>
         <div class="row d-flex text-center text-light px-5 mx-5">
             <h1>ADMISSION</h1>
             <div class="d-flex justify-content-center pt-2">
@@ -72,13 +78,14 @@
             </div>
         </div>
     </section>
-    <!--Admission-->
+    <!--ADMISSION-->
     <section class="roadmap pt-5 pb-5">
         <h5 class="container text-center" style="color: #000050; font-weight: 600;">
             Vous êtes passionné par l’informatique et souhaitez transformer cette passion
             en une carrière prometteuse avec notre
-            <span>Licence Professionnelle</span> en <span>Informatique</span> ?<br />
-            Votre Parcours commence ici &#x1F447;
+            <span style="color: red;">Licence Professionnelle</span> en <span style="color: red;">Informatique</span>
+            ?<br />
+            Votre projet commence ici &#x1F447;
         </h5>
         <ul class="timeline pt-3 pb-3">
             <li>
@@ -123,12 +130,12 @@
             </li>
         </ul>
     </section>
-
+    <!-- COMMUNIQUE -->
     <section class="container communique-express pt-5 pb-5">
-        <h1 class="text-center">Communiqué express</h1>
-        <div class="row">
-            <div class="communique-body mb-5 mt-4 col-lg-6">
-                <p>
+        <h1 class="text-center">Communiqué</h1>
+        <div class="row justify-content-center">
+            <div class="communique-body mt-2 col-lg-8">
+                <p class="text-justify">
                     Le Président de l’Université de Kara invite les titulaires d’un baccalauréat série C, D ou
                     équivalent
                     datant d’au plus trois ans (BAC 2022, 2023, 2024), ou tout autre diplôme équivalent, désireux
@@ -144,13 +151,29 @@
                     Scolarité (DAAS) du <span> 5 Août au 9 septembre 2024 de 08 h à 12h30</span>, délai de rigueur.
                 </p>
             </div>
-            <div class="col-lg-6">
-
-            </div>
         </div>
-
     </section>
 
+    <!-- CONDITION D'ADMISSION -->
+    <section class="condition-admission container">
+        <h1 class="text-center">CONDITIONS ADMISSION</h1>
+        <table class="mb-5 mt-3">
+            <thead>
+                <tr>
+                    <td>BAC série C, D ou E ou tout autres diplômes équivalents</td>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>BAC datant d’au plus trois (03) ans à la date du concours (BAC 2020, 2021, 2022)</td>
+                </tr>
+                <tr>
+                    <td> Etre âgé de dix-huit (18) ans au moins et vingt-cinq (25) ans au plus</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <!--Footer-->
     <footer class="">
         <div class="footer-body container">
@@ -269,8 +292,31 @@
             });
         });
 
+        document.addEventListener('DOMContentLoaded', function () {
+            const deadline = document.getElementById('deadline');
+            const closeBtn = document.getElementById('close');
+
+            function showBanner() {
+                deadline.classList.add('show');
+                setTimeout(hideBanner, 10000);
+            }
+
+            function hideBanner() {
+                deadline.classList.remove('show');
+            }
+
+            closeBtn.addEventListener('click', function () {
+                hideBanner();
+                clearInterval(bannerInterval);
+            });
+
+            const bannerInterval = setInterval(showBanner, 30000);
+            showBanner(); // Show the banner immediately on page load
+        });
+
+
         //Timeline script
-        const on = document.querySelector(".on");
+        /*const on = document.querySelector(".on");
         const tw = document.querySelector(".tw");
         const thre = document.querySelector(".thre");
         const fou = document.querySelector(".fou");
@@ -315,8 +361,7 @@
         });
         text5.addEventListener("mouseout", () => {
             fiv.classList.remove("active");
-        });
-
+        });*/
     </script>
 </body>
 
