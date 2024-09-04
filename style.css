@@ -2198,11 +2198,14 @@ td ul li {
     display: block;
     width: 100%;
   }
+  tbody td {
+    border-top: none;
+  }
   td {
     position: relative;
     text-align: left;
-    border: 1px solid #000; /* Assure que les bordures gauche et droite sont visibles */
-    border-bottom: 1px solid #000;
+    border: 1px solid var(--bluedark); /* Assure que les bordures gauche et droite sont visibles */
+    border-bottom: 1px solid var(--bluedark);
   }
 
   td::before {
